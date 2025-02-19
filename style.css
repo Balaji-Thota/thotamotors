@@ -237,7 +237,7 @@ body .images .store-main{
 }
 
 .store-main img:hover{
-    transform: scale(1.3);
+    transform: scale(2.0);
 }
 
 
@@ -261,7 +261,7 @@ body .images .in-store{
     transition: transform 0.5s;
 }
 
-.in-store img:hover{transform: scale(1.5);
+.in-store img:hover{transform: scale(2.5);
 }
 
 /* contact */
@@ -271,6 +271,11 @@ body .images .in-store{
     margin-top: 50px;
     padding: 50px;
     margin-bottom: -100px;
+}
+
+.contact ul{
+    list-style: none;
+    padding: 0;
 }
 
 /* headings */
