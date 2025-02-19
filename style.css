@@ -242,25 +242,26 @@ body .images .store-main{
 
 
 body .images .in-store{
-    margin: 50px 0 0 300px;
+    /* margin: 50px 0 0 300px;
     width: 70%;
-    height: 400px;
+    height: 400px; */
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    padding: 30px;
 }
 
 .in-store img{
     width: 10%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
     border: 3px solid rgba(6, 1, 1, 0.603);
-    transition: all ease-in-out 0.5s;
+    transition: transform 0.5s;
 }
 
-.in-store img:hover{
-    width: 25%;
+.in-store img:hover{transform: scale(1.5);
 }
 
 /* contact */
