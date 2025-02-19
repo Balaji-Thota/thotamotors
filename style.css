@@ -8,7 +8,7 @@ body{
 
 
 /* Navigation */
-.navbar {
+/* .navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -82,7 +82,7 @@ nav .logo{
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007BFF; /* Blue */
+    background-color: #007BFF; 
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -90,7 +90,97 @@ nav .logo{
     font-weight: bold;
 }
 .btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
+} */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navbar img {
+    width: 120px;
+    height: auto;
+    margin-left: 0;
+    padding-left: 0;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+    padding: 10px 15px;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-left: auto;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .report-btn {
+        position: static;
+        margin-top: 10px;
+        text-align: center;
+    }
 }
 
 
