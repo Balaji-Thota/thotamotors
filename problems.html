@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Problem - Thota Motors</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="btn">Home</a>
+        </div>
+    </nav>
+    <main class="report-container">
+        <div class="report-box">
+            <h1 style="color: black;">Report a Problem</h1>
+            <p>If you are facing any issues, please let us know by filling out the form below.</p>
+            <form action="mailto:thotamotors19@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Your Phone No:</label>
+                    <input type="number" id="name" name="name" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="problem">Describe the Issue</label>
+                    <textarea id="problem" name="problem" placeholder="Describe the issue..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Report</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
