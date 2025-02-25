@@ -182,7 +182,6 @@ button.btn:hover {
     height: 100vh;
     /* background: linear-gradient(var(--light-gray), var(--accent-color), var(--secondary-color), var(--primary-color)); */
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/cover.JPEG') center/cover;
-    /* background: url(images/1.jpg) center/cover; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,7 +201,7 @@ button.btn:hover {
     margin-bottom: 20px;
     font-weight: 700;
     border: 1px black;
-    background: radial-gradient(black 20%, transparent);
+    background: radial-gradient(black , transparent 50%);
 }
 
 .hero p {
@@ -561,6 +560,10 @@ footer{
 
     .navbar.scrolled .nav-menu {
         top: 70px;
+    }
+
+    .hero {
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/cover_3.JPEG') center/cover;
     }
 
     .about-features {
